@@ -1,5 +1,5 @@
 {
-    "name": "victorximenis/omnipay-mercadopago",
+    "name": "pckz/omnipay-mercadopago",
     "type": "library",
     "description": "MercadoPago gateway for OmniPay",
     "keywords": [
@@ -12,12 +12,12 @@
         "payment",
         "PHPeste"
     ],
-    "homepage": "https://github.com/victorximenis/omnipay-mercadopago",
+    "homepage": "https://github.com/pckz/omnipay-mercadopago",
     "license": "MIT",
     "authors": [
         {
-            "name": "Victor Ximenis",
-            "email": "victorximenis@gmail.com"
+            "name": "Pedro Ojeda A",
+            "email": "pckz@pckz.cl"
         }
     ],
     "autoload": {
