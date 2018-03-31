@@ -31,8 +31,8 @@ class PurchaseRequest extends AbstractRequest
                 'title' => 'PurchaseTest',
                 'quantity' => 1,
                 'category_id' => 'tickets',
-                'currency_id' => 'BRL',
-                'unit_price' => 10.0
+                'currency_id' => 'VEF',
+                'unit_price' => 1000
             )
         ));
 
@@ -43,15 +43,8 @@ class PurchaseRequest extends AbstractRequest
             'external_reference' => $external_reference,
             'auto_return'        => 'approved',
             'back_urls'          => [
-                'success'        => $this->getReturnUrl()
-            ],
-
-            //TODO add option for that
-            'payment_methods' => [
-                'excluded_payment_types' => [
-                    ["id" => "ticket"],
-                    ["id" => "atm"]
-                ]
+                'success'        => $this->getReturnUrl(),
+                'failure'        => $this->getCancelUrl()
             ]
         ];
         return $purchaseObject;
